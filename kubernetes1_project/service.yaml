@@ -5,9 +5,9 @@ metadata:
   namespace: django-todo-app 
 spec:
   selector:
-    app.kubernetes.io/name: django-app
+    app: django-todo-app
   ports:
     - protocol: TCP
       port: 8001
-      targetPort: 9376
+      targetPort: 80
 
