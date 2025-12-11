@@ -9,3 +9,10 @@
 `kubectl apply -f pods.yaml` — Create/update resources defined in `pods.yaml`.
 
 `kubectl delete -f pods.yaml --namespace=nginx` — Delete resources from `pods.yaml` in the `nginx` namespace.
+
+for Cron-jobs
+kubectl apply -f cronjob.yaml
+kubectl get cronjobs -n nginx
+kubectl get pods -n nginx
+kubectl logs pod/minute-backup-29424127-4hxrp -n nginx
+kubectl delete -f cronjob.yaml
