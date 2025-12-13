@@ -16,3 +16,9 @@ kubectl get cronjobs -n nginx
 kubectl get pods -n nginx
 kubectl logs pod/minute-backup-29424127-4hxrp -n nginx
 kubectl delete -f cronjob.yaml
+
+
+############################################################
+
+kubectl port-forward -n ingress-nginx svc/ingress-nginx-controller 8080:80  ---> ingress port forward command
+
