@@ -22,3 +22,14 @@ kubectl delete -f cronjob.yaml
 
 kubectl port-forward -n ingress-nginx svc/ingress-nginx-controller 8080:80  ---> ingress port forward command
 
+
+
+########################################################################################################################
+
+kubectl config current-context
+kubectl config get-contexts
+kubectl config use-context kind-go-web-cluster
+
+
+
+
