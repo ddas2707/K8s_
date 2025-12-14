@@ -38,6 +38,16 @@ kubectl apply -f statefulSets.yaml --dry-run=client
 watch kubectl get pods -n mysql
 kubectl exec -it mysql-statefulset-0 -n mysql -- bash   ---->  mysql -u root -p 
 
+########################################################################################################################
+
+kubectl apply -f persistentVolume.yaml
+kubectl apply -f pvc.yaml
+kubectl delete pv local-pv -n mysql
+kubectl delete pvc local-pvc -n mysql
+ 
+
+
+
 
 
 
