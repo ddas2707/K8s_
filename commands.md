@@ -30,6 +30,15 @@ kubectl config current-context
 kubectl config get-contexts
 kubectl config use-context kind-go-web-cluster
 
+########################################################################################################################
+
+kubectl apply -f service.yaml
+kkubectl get service
+kubectl apply -f statefulSets.yaml --dry-run=client
+watch kubectl get pods -n mysql
+kubectl exec -it mysql-statefulset-0 -n mysql -- bash   ---->  mysql -u root -p 
+
+
 
 
 
