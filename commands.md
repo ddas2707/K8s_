@@ -44,6 +44,9 @@ kubectl apply -f persistentVolume.yaml
 kubectl apply -f pvc.yaml
 kubectl delete pv local-pv -n mysql
 kubectl delete pvc local-pvc -n mysql
+
+
+############
  
 
 
