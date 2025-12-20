@@ -46,8 +46,10 @@ kubectl delete pv local-pv -n mysql
 kubectl delete pvc local-pvc -n mysql
 
 
-############
- 
+########################################################################################################################
+
+To see if my pods content is working properly on web browser
+kubectl port-forward pod/notes-app-deployment-6bdcf54478-ks5d2 8000:8000 -n nginx
 
 
 
